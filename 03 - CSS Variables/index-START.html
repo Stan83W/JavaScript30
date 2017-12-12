@@ -22,9 +22,19 @@
 
   <style>
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+    :root {
+      --base: #F96D00;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+    h1 {
+      color: var(--base);
+    }
 
     body {
       text-align: center;
@@ -45,6 +55,9 @@
   </style>
 
   <script>
+
+    const inputs = document.querySelectorAll('.controls input')
+
   </script>
 
 </body>
